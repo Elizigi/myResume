@@ -1,0 +1,21 @@
+.skillButtonsContainer {
+  width: 100%;
+  margin-top: 3rem;
+  height: fit-content;
+  background-color: rgb(25, 41, 48);
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    color: rgb(123, 123, 119);
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 400;
+    height: 4.5rem;
+    &:hover {
+      border-color: transparent;
+      border-top: 1px rgb(25, 41, 48) solid;
+      background-color: rgb(19, 31, 36);
+      color: white;
+    }
+  }
+}

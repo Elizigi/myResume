@@ -1,0 +1,17 @@
+export const skillsArray = [
+  "HTML",
+  "CSS",
+  "SCSS",
+  "TypeScript",
+  "React",
+  "Zustand",
+  "Redux",
+  "Angular",
+  "Vite",
+  "Express",
+  "Node",
+  "SocketIO",
+  "Firebase",
+  "Firestore",
+  "Git",
+];

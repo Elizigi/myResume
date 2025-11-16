@@ -7,15 +7,21 @@
   text-align: left;
   display: flex;
   flex-direction: row;
+  background-color: #101c29;
+  z-index: 999;
   h2 {
-    padding: 2rem;
-    text-wrap:nowrap;
+    padding:0 2rem ;
+    text-wrap: nowrap;
     padding-left: 5rem;
     font-size: 2rem;
     flex: 1;
+    
   }
   .navButtons {
     padding: 2rem;
+    padding-bottom: 0;
+    height: 2rem;
+
     padding-right: 5rem;
     justify-content: flex-end;
   }
