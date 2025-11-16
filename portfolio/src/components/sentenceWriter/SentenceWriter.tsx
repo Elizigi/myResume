@@ -3,14 +3,9 @@ import styles from "./SentenceWriter.module.scss";
 import UseSentenceWriter from "../../hooks/SentenceWriterHook";
 
 const SentenceWriter = () => {
-  const { typedWord, isBreathing, selectedSentence } =
+  const { words, isBreathing, selectedSentence } =
     UseSentenceWriter(sentencesModelArray);
-  const words = (index: number, sentence: string) => {
-    if (selectedSentence.current === index) return typedWord;
-    if (selectedSentence.current > index) return sentence;
 
-    return "";
-  };
   return (
     <div className={styles.sentenceContainer}>
       {sentencesModelArray.map((sentence, index) => (
@@ -19,7 +14,9 @@ const SentenceWriter = () => {
             <h2 className={styles.green}>{words(index, sentence)}</h2>
           </div>
           <div className={`${isBreathing ? styles.breathing : ""}`}>
-            <h2 className={styles.lShape}>{selectedSentence.current===index?"|":""}</h2>
+            <h2 className={styles.lShape}>
+              {selectedSentence.current === index ? "|" : ""}
+            </h2>
           </div>
         </div>
       ))}

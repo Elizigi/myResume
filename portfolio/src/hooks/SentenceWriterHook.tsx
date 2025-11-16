@@ -103,7 +103,14 @@ const UseSentenceWriter = (
 
     timeoutRef.current = setTimeout(() => removeLetter(), timeDelay.current);
   };
-  return { typedWord, isBreathing, selectedSentence };
+
+  const words = (index: number, sentence: string) => {
+    if (selectedSentence.current === index) return typedWord;
+    if (selectedSentence.current > index) return sentence;
+
+    return "";
+  };
+  return { words, isBreathing, selectedSentence };
 };
 
 export default UseSentenceWriter;

@@ -1,14 +1,12 @@
 import "./App.css";
 import NavBar from "./components/navBar/NavBar";
-import SentenceWriter from "./components/sentenceWriter/SentenceWriter";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <div >
-        <SentenceWriter></SentenceWriter>
-      </div>
+      <NavBar />
+     <Home />
     </>
   );
 }
