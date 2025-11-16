@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 const UseSentenceWriter = (
   sentencesArray: string[],
+  deleteAble: boolean = false,
   grandmaMode: boolean = false
 ) => {
   const [typedWord, setTypedWord] = useState("");
@@ -19,12 +20,9 @@ const UseSentenceWriter = (
   const breathDelay = 350;
 
   const chooseWord = () => {
-    selectedSentence.current = Math.floor(
-      Math.random() * sentencesArray.length
-    );
+    if (selectedSentence.current >= sentencesArray.length) return;
     setIsBreathing(false);
     console.log(selectedSentence.current);
-    setTypedWord("");
     currentLetterIdx.current = 0;
 
     timeoutRef.current = setTimeout(() => {
@@ -67,11 +65,23 @@ const UseSentenceWriter = (
     if (sentence.length === currentLetterIdx.current) {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
-      setTimeout(() => removeLetter(), timeToRead);
+
+      if (deleteAble) {
+        timeoutRef.current = setTimeout(() => removeLetter(), timeToRead);
+        return;
+      }
+
+      timeoutRef.current = setTimeout(() => wordAndSpace(), timeToRead);
       return;
     }
 
     timeoutRef.current = setTimeout(() => addLetter(), timeDelay.current);
+  };
+  const wordAndSpace = () => {
+    selectedSentence.current++;
+    setTypedWord("");
+
+    chooseWord();
   };
   const removeLetter = () => {
     stopBreathing();
@@ -87,13 +97,13 @@ const UseSentenceWriter = (
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
       currentLetterIdx.current = 0;
-      setTimeout(() => chooseWord(), timeToRead);
+      timeoutRef.current = setTimeout(() => chooseWord(), timeToRead);
       return;
     }
 
     timeoutRef.current = setTimeout(() => removeLetter(), timeDelay.current);
   };
-  return { typedWord, isBreathing };
+  return { typedWord, isBreathing, selectedSentence };
 };
 
 export default UseSentenceWriter;
