@@ -1,0 +1,16 @@
+.customButtonFilled {
+  width: fit-content;
+  background-color: rgb(236, 96, 83);
+  &:hover {
+    border: 1px solid rgb(236, 96, 83);
+    background-color: rgb(252, 103, 89);
+  }
+}
+.customButtonEmpty {
+  width: fit-content;
+  border: 1px solid rgb(236, 96, 83);
+  &:hover {
+    border: 1px solid rgb(236, 96, 83);
+    background-color: #091017;
+  }
+}
