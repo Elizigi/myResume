@@ -9,18 +9,23 @@
   margin: 1rem;
   align-content: center;
   h2 {
-    margin: 0 2rem;
     align-content: center;
+  }
+  img {
+    margin-left: 0.2rem;
+    width: 6rem;
+    height: 5rem;
   }
 }
 
 .midBar {
-  border-left: solid 3px orangered;
+  border-left: solid 3px rgb(236, 96, 83);
 }
 
 .dot {
-  color: orangered;
+  color: rgb(236, 96, 83);
   position: absolute;
   z-index: 99;
-  transform: translate(-40%,270%);
+  font-size: 1.5rem;
+  transform: translate(-40%, 160%);
 }

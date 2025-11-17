@@ -16,7 +16,10 @@ export const skillsArray = [
   "Git",
 ];
 export const skillsBarArray = [
-  { line: "Website Development", svg: "" },
-  { line: "App Development", svg: "" },
+  { line: "Website Development", svg: monitor },
+  { line: "App Development", svg: phone },
   { line: "Full-Stack Development", svg: "" },
 ];
+
+import monitor from "../svg/monitor.svg";
+import phone from "../svg/phone.svg";

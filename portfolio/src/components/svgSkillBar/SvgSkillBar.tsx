@@ -1,12 +1,11 @@
 import { skillsBarArray } from "../../model/skillsModel";
 import styles from "./SvgSkillBar.module.scss";
-
 const SvgSkillBar = () => {
   return (
     <div className={styles.skillBarContainer}>
       {skillsBarArray.map((skill, index) => (
         <div key={skill.line} className={styles.skillBar}>
-          {index === skillsBarArray.length-1 ? (
+          {index === skillsBarArray.length - 1 ? (
             ""
           ) : (
             <div className={styles.dot}>●</div>
