@@ -14,7 +14,7 @@
     flex-direction: row;
   }
   .orange {
-    color: rgb(236, 96, 83);
+    color: $orange;
   }
 
   h2 {
@@ -23,7 +23,7 @@
     text-wrap: nowrap;
   }
   .spacer {
-    color: rgb(236, 96, 83);
+    color: $orange;
     margin: 0;
     position: relative;
     transform: translate(-50%, -10%);
@@ -31,7 +31,7 @@
     user-select: none;
   }
   .dot {
-    color: rgb(236, 96, 83);
+    color: $orange;
   }
   .spacedWord {
     margin-left: -6rem;
@@ -43,7 +43,7 @@
     min-width: 0;
   }
   .lShape {
-    color: rgba(182, 182, 182, 0.809);
+    color: $text-writer;
     font-weight: 100;
     margin-left: 0;
   }

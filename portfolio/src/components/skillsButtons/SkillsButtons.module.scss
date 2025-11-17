@@ -2,11 +2,11 @@
   width: 100%;
   margin-top: 3rem;
   height: fit-content;
-  background-color: rgb(20, 35, 42);
+  background-color: $green-color;
   display: flex;
   justify-content: space-evenly;
   button {
-    color: rgb(123, 123, 119);
+    color: $text-faded;
     font-size: 1.5rem;
     width: 100%;
     min-width: fit-content;
@@ -14,9 +14,9 @@
     height: 4.5rem;
     &:hover {
       border-color: transparent;
-      border-top: 1px rgb(25, 41, 48) solid;
-      background-color: rgb(19, 31, 36);
-      color: white;
+      border-top: 1px $green-dark solid;
+      background-color: $green-dark;
+      color: $text-color;
     }
   }
 }

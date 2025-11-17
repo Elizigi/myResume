@@ -1,16 +1,16 @@
 .customButtonFilled {
   width: fit-content;
-  background-color: rgb(236, 96, 83);
+  background-color: $orange;
   &:hover {
-    border: 1px solid rgb(236, 96, 83);
-    background-color: rgb(252, 103, 89);
+    border: 1px solid $orange;
+    background-color: $orange-light;
   }
 }
 .customButtonEmpty {
   width: fit-content;
-  border: 1px solid rgb(236, 96, 83);
+  border: 1px solid $orange;
   &:hover {
-    border: 1px solid rgb(236, 96, 83);
-    background-color: #091017;
+    border: 1px solid $orange-light;
+    background-color: $bg-dark;
   }
 }

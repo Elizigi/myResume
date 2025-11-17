@@ -21,11 +21,11 @@
 }
 
 .midBar {
-  border-left: solid 3px rgb(236, 96, 83);
+  border-left: solid 3px $orange;
 }
 
 .dot {
-  color: rgb(236, 96, 83);
+  color: $orange;
   position: absolute;
   user-select: none;
   z-index: 99;
