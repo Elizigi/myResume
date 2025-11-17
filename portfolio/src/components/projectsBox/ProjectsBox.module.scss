@@ -9,9 +9,16 @@
     flex-direction: row;
     width: 80%;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: $left-shifted;
     text-align: left;
+  }
+  .projectName {
+    margin-top: 0;
+  }
+  .techRows {
+    display: flex;
+    flex-direction: row;
   }
   .textColumn {
     display: flex;
@@ -23,5 +30,6 @@
   }
   p {
     font-size: 1.8rem;
+    margin: 2rem 0 4rem 0;
   }
 }

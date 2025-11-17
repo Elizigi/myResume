@@ -10,7 +10,7 @@ const Home = () => {
       <div className={styles.mainContent}>
         <div>
           <SentenceWriter />
-          <TopButtons />
+          <TopButtons contacts={true} />
         </div>
         <SelfImage />
       </div>

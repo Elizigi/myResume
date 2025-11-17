@@ -14,3 +14,15 @@
     background-color: $bg-dark;
   }
 }
+.customButtonUnder {
+  width: fit-content;
+  border-bottom: 1px solid $orange;
+  &:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $orange-light;
+    background-color: $bg-dark;
+  }
+}
+.customButton {
+  font-size: 1.3rem;
+}

@@ -1,11 +1,35 @@
+import type { FC } from "react";
 import CustomButton from "../customButton/CustomButton";
 import styles from "./TopButtons.module.scss";
 
-const TopButtons = () => {
+interface TopButtonsProps {
+  contacts?: boolean;
+  projects?: string[];
+}
+const TopButtons: FC<TopButtonsProps> = ({ contacts, projects }) => {
   return (
     <div className={styles.topButtonsContainer}>
-      <CustomButton written={"Get Contact"} full />
-      <CustomButton written={"My Resume"} />
+      {contacts && (
+        <div className={styles.distantButtons}>
+          <CustomButton written={"Get Contact"} full />
+          <CustomButton written={"My Resume"} />
+        </div>
+      )}
+
+      {projects?.map((project, index) => (
+        <a
+          href={project}
+          key={project}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CustomButton
+            written={index === 0 ? "View Github" : "View Project ↗"}
+            full={index === 0}
+            lineUnder
+          />
+        </a>
+      ))}
     </div>
   );
 };

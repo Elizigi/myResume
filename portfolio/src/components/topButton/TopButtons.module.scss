@@ -1,7 +1,13 @@
 .topButtonsContainer {
   display: flex;
-  margin-left: 3rem;
   button {
-    margin-left: 8rem;
+    margin-right: 4rem;
+  }
+  .distantButtons {
+    margin-left: 3rem;
+    button {
+      margin-right: 0;
+      margin-left: 8rem;
+    }
   }
 }

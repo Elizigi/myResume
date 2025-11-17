@@ -1,0 +1,12 @@
+.techButton {
+  width: fit-content;
+  height: fit-content;
+  background-color: $green-color;
+  border-radius: 20px;
+  border: 1px transparent solid;
+  color: $text-faded;
+  &:hover {
+    border: 1px transparent solid;
+     color: $text-color;
+  }
+}
