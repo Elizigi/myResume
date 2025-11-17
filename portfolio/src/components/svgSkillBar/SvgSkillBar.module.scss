@@ -5,7 +5,7 @@
 .skillBar {
   display: flex;
   flex-direction: row;
-  height: 5rem;
+  height: 6rem;
   margin: 1rem;
   align-content: center;
   h2 {
@@ -30,5 +30,5 @@
   user-select: none;
   z-index: 99;
   font-size: 1.5rem;
-  transform: translate(-40%, 200%);
+  transform: translate(-40%, 250%);
 }
