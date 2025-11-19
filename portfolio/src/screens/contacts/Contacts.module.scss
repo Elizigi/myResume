@@ -1,0 +1,41 @@
+.contactsScreen {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 8rem;
+  font-size: 3rem;
+  h2 {
+    margin: 0;
+    margin-left: 0.4rem;
+    text-wrap: nowrap;
+  }
+  h4 {
+    margin: 1rem 0;
+  }
+  button {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+}
+.contactsContent {
+  display: flex;
+  flex-direction: row;
+}
+.titleRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+  .spacer {
+    color: $orange;
+    margin: 0;
+    position: relative;
+    transform: translate(0, -10%);
+    font-weight: 100;
+    user-select: none;
+  }
+}
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  margin-left: $left-shifted;
+}
