@@ -4,9 +4,11 @@
   height: fit-content;
   background-color: $green-color;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   button {
     color: $text-faded;
+    flex: 1;
     font-size: 1.5rem;
     width: 100%;
     min-width: fit-content;

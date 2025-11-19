@@ -1,3 +1,4 @@
+import Footer from "./components/footer/footer";
 import NavBar from "./components/navBar/NavBar";
 import About from "./screens/about/About";
 import Contacts from "./screens/contacts/Contacts";
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Projects />
       <Contacts />
+      <Footer />
     </>
   );
 }
