@@ -1,4 +1,4 @@
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
 import NavBar from "./components/navBar/NavBar";
 import About from "./screens/about/About";
 import Contacts from "./screens/contacts/Contacts";
