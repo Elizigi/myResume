@@ -4,6 +4,9 @@
   width: 50%;
   max-width: 100vw;
   padding-left: $left-shifted;
+  @media (max-width: 768px) {
+    padding-left: $left-shifted-mobile;
+  }
   text-align: left;
   p {
     padding: 0;

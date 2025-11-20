@@ -4,10 +4,13 @@
   text-align: left;
   width: 60rem;
   padding-left: $left-shifted;
+  @media (max-width: 768px) {
+    padding-left: $left-shifted-mobile;
+  }
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  height:fit-content;
+  height: fit-content;
   margin-bottom: 2rem;
   font-size: 3rem;
   .sentence {

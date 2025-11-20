@@ -17,6 +17,9 @@
   button {
     font-size: 2rem;
     margin-top: $left-shifted;
+    @media (max-width: 768px) {
+      margin-top: $left-shifted-mobile;
+    }
   }
 }
 .contactsContent {

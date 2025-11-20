@@ -3,6 +3,9 @@
   flex-direction: column;
   width: 100vw;
   margin: $left-shifted;
+  @media (max-width: 768px) {
+    margin: $left-shifted-mobile;
+  }
   margin-bottom: 2rem;
   margin-top: 5rem;
   max-width: 100vw;

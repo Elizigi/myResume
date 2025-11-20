@@ -11,6 +11,9 @@
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: $left-shifted;
+    @media (max-width: 768px) {
+      padding-left: $left-shifted-mobile;
+    }
     text-align: left;
   }
   .projectName {

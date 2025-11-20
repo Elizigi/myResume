@@ -13,6 +13,9 @@
     padding: 0 2rem;
     text-wrap: nowrap;
     padding-left: $left-shifted;
+    @media (max-width: 768px) {
+      padding-left: $left-shifted-mobile;
+    }
     font-size: 2rem;
     margin-bottom: 1rem;
     flex: 1;
@@ -21,7 +24,9 @@
     padding: 2rem;
     padding-bottom: 0;
     height: 2rem;
-
+    @media (max-width: 768px) {
+      padding-left: $left-shifted-mobile;
+    }
     padding-right: $left-shifted;
     justify-content: flex-end;
   }
