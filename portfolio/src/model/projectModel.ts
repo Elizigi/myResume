@@ -1,6 +1,8 @@
 import type { skillsArray } from "./skillsModel";
 import wolrde from "../images/wolrde.png";
 import DrawingBoardCollab from "../images/DrawingBoardCollab.png";
+import freeDi from "../images/freeDi.png";
+
 interface Project {
   name: string;
   description: string;
@@ -42,4 +44,23 @@ export const projectsModelArray: Project[] = [
     GitLink: "https://github.com/Elizigi/worldeLike",
     DemoLink: "https://worlde-like.vercel.app",
   },
+  {
+  name: "Freedi - Deliberative Democracy Platform",
+  description:
+    "Open-source platform for large-scale group decision-making. Features real-time collaboration, structured deliberation tools, consensus scoring algorithm, group organization, PWA support, accessibility, and AI-assisted evaluation.",
+  technologies: [
+    "React",
+    "TypeScript",
+    "Redux Toolkit",
+    "SCSS",
+    "Firebase",
+    "Firestore",
+    "Node.js",
+    "Vite",
+  ],
+  photo: freeDi, 
+  GitLink: "https://github.com/Elizigi/Freedi-app", 
+  DemoLink: "https://freedi-test.web.app/home", 
+}
+
 ];
