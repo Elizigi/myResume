@@ -13,6 +13,24 @@ interface Project {
 }
 export const projectsModelArray: Project[] = [
   {
+    name: "Freedi - Deliberative Democracy Platform",
+    description:
+      "Open-source platform for large-scale group decision-making. Features real-time collaboration, structured deliberation tools, consensus scoring algorithm, group organization, PWA support, accessibility, and AI-assisted evaluation.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "SCSS",
+      "Firebase",
+      "Firestore",
+      "Node.js",
+      "Vite",
+    ],
+    photo: freeDi,
+    GitLink: "https://github.com/Elizigi/Freedi-app",
+    DemoLink: "https://freedi-test.web.app/home",
+  },
+  {
     name: "Collaborative Drawing Board",
     description:
       "Real-time multiplayer drawing application with layers, image import, and transform controls. Features room-based collaboration with host permissions, undo/redo functionality, and live cursor tracking.",
@@ -44,23 +62,4 @@ export const projectsModelArray: Project[] = [
     GitLink: "https://github.com/Elizigi/worldeLike",
     DemoLink: "https://worlde-like.vercel.app",
   },
-  {
-  name: "Freedi - Deliberative Democracy Platform",
-  description:
-    "Open-source platform for large-scale group decision-making. Features real-time collaboration, structured deliberation tools, consensus scoring algorithm, group organization, PWA support, accessibility, and AI-assisted evaluation.",
-  technologies: [
-    "React",
-    "TypeScript",
-    "Redux Toolkit",
-    "SCSS",
-    "Firebase",
-    "Firestore",
-    "Node.js",
-    "Vite",
-  ],
-  photo: freeDi, 
-  GitLink: "https://github.com/Elizigi/Freedi-app", 
-  DemoLink: "https://freedi-test.web.app/home", 
-}
-
 ];
